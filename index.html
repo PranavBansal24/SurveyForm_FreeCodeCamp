@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>SURVEY FORM</title>
+</head>
+<body>
+    
+    <div id="container">
+    <div id="header">
+     <h1  id ="title">VIDEO GAME SURVEY</h1>
+     <h3 id="description">Thank you for finding some time to help us improve the new game.<br><br></h3>
+    </div>
+     <div id="mainbody">
+        <form action="backend.php">
+    <div class="box1">
+    <div class="name1">
+        <label for="name">NAME:</label>
+        <input type="text" name="myNAME" id="name" placeholder="Enter your name here">
+    </div><br>
+    <div class="age1">
+        <label for="age">AGE:</label>
+        <input type="number" name="myAGE" id="age" min="10" placeholder="Enter your age here">
+    </div>
+    <div class="emailid1"><br>
+        <label for="emailid">EMAIL ID:</label>
+        <input type="email" name="myEMAIL" id="emailid" placeholder="Enter your email id here">
+    </div><br>
+    </div>
+    <div class="box2">
+        <p>
+            <h3>What kind of a gamer you are?</h3><br>
+            <label for="pc">Personal Computer Gamer</label>
+            <input type="checkbox" name="pcgamers" id="pc"><br>
+
+
+            <label for="xbox">XBOX Gamer</label>
+            <input type="checkbox" name="xboxgamers" id="xbox"><br>
+
+
+            <label for="ps5">PlayStation 5 Gamer</label>
+            <input type="checkbox" name="ps5gamers" id="ps5"><br>
+
+            
+            <label for="laptop">Laptop Computer  Gamer</label>
+            <input type="checkbox" name="laptopgamers" id="laptop"><br>
+            
+            
+        </p><br>
+    </div>
+    <div class="box3">
+        <p>
+            <h3>Which is your favourite genre?</h3><br>
+            <label for="action">ACTION</label>
+            <input type="radio" name="genre" id="action"><br>
+
+
+            <label for="adventure">ADVENTURE</label>
+            <input type="radio" name="genre" id="adventure"><br>
+
+
+            <label for="simulation">SIMULATION</label>
+            <input type="radio" name="genre" id="simulation"><br>
+
+
+            <label for="sports">SPORTS</label>
+            <input type="radio" name="genre" id="sports"><br>
+
+            <label for="others">OTHERS</label>
+            <input type="radio" name="genre" id="others"><br>
+        </p>   
+        
+    </div><br><br><br>
+    <div class="qs">
+        <h3>Do you like our newly launched game?</h3>
+
+            <label for="yes">YES</label>
+            <input type="radio" name="yesorno" id="finalqs">
+
+            <label for="no">NO</label>
+            <input type="radio" name="yesorno" id="finalqs"><br>
+
+
+    </div><br><br><br>
+    <div class="footer">
+        <p>Please provide us with your valuable feedback .</p>
+        <textarea name="feedback" id="feedback" cols="90" rows="10"></textarea>
+    </div>
+    </div>
+</form>
+    <div class="padding">
+    <input type="submit" name="Submit" id="submit">
+    <input type="reset" name="Reset" id="reset">
+</div>
+</div>
+
+    
+</body>
+</html>
